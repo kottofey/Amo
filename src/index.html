@@ -3,10 +3,28 @@
   <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>JS Vite Template</title>
+    <title>АМО | Изменение даты сделок</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div class="wrapper">
+      <div class="input">
+        <input
+          type="text"
+          class="input__link"
+          placeholder="Вставьте ссылку на сделку"
+        ></input>
+        <span class="input__lead-name"></span>
+        <input
+          class="input__date"
+          id="inputDate"
+          name="input__date"
+          type="date"
+        >
+        <button class="input__button" type="submit">
+          Изменить дату создания сделки</button>
+        <span class="input__status"></span>
+      </div>
+    </div>
     <script src="./js/main.js" type="module"></script>
   </body>
 </html>

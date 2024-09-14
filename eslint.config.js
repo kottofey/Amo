@@ -1,5 +1,6 @@
 import babelParser from '@babel/eslint-parser';
-import htmlParser from '@html-eslint/eslint-plugin';import js from '@eslint/js';
+import htmlParser from '@html-eslint/eslint-plugin';
+import js from '@eslint/js';
 import globals from 'globals';
 import prettierConfig from 'eslint-plugin-prettier/recommended';
 
@@ -58,7 +59,7 @@ export default [
       'arrow-parens': [ 2, 'as-needed', { requireForBlockBody: true } ],
       'array-bracket-spacing': [ 2, 'always' ],
       'eol-last': [ 2, 'always' ],
-      'max-len': [ 1, 80 ],
+      'max-len': [ 1, 100 ],
       'block-spacing': [ 2, 'always' ],
       'comma-dangle': [ 'error', {
         arrays: 'always-multiline',
