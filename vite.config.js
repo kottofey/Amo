@@ -28,10 +28,13 @@ export default defineConfig({
     },
   },
   plugins: [
-    checker({
-      eslint: {
-        lintCommand: 'eslint .',
-      },
-    }),
+    {
+      ...checker({
+        eslint: {
+          lintCommand: 'eslint .',
+        },
+      }),
+      apply: 'build', // applies only in build mode
+    },
   ],
 });
